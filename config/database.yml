@@ -80,8 +80,12 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+#production:
+#  <<: *default
+#  database: RubyactViz_production
+#  username: RubyactViz
+#  password: <%#= ENV['RUBYACTVIZ_DATABASE_PASSWORD'] %>
+
 production:
   <<: *default
-  database: RubyactViz_production
-  username: RubyactViz
-  password: <%= ENV['RUBYACTVIZ_DATABASE_PASSWORD'] %>
+  url: <%= ENV['HEROKU_POSTGRESQL_BRONZE_URL'] %>
