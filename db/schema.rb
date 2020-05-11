@@ -10,10 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_07_003540) do
+ActiveRecord::Schema.define(version: 2020_05_07_031059) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "companies", force: :cascade do |t|
+    t.string "name"
+    t.string "reg_number"
+    t.string "address_1"
+    t.string "county"
+    t.string "country"
+    t.string "category"
+    t.string "current_status"
+    t.string "accounts_category"
+    t.integer "num_gen_partners"
+    t.integer "num_lim_partners"
+    t.string "ch_uri"
+    t.string "last_return"
+    t.string "next_return"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "company_type"
+    t.string "incorporation"
+    t.string "sic_1"
+    t.string "sic_2"
+    t.string "sic_3"
+    t.string "sic_4"
+  end
 
   create_table "vulnerabilities", force: :cascade do |t|
     t.string "name", null: false

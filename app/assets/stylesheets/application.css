@@ -18,36 +18,98 @@
 .bg_primary-color {
     background-color: #FFFFFF;
 }
+
 .primary-color {
     background-color: #FFFFFF;
 }
+
 .bg_secondary-color {
     background-color: #293241;
 }
+
 .secondary-color {
     color: #293241;
 }
+
 .custom-button.btn {
     background-color: #293241;
     color: #FFF;
     border: none;
 }
+
 .custom-button.btn:hover {
     color: #FFF !important;
     border: none;
 }
+
 .hero {
     width: 100vw;
     height: 50vh;
 }
+
 .hero img {
     object-fit: cover;
     object-position: top;
     height: 100%;
     width: 100%;
 }
+
 .overlay {
     height: 100%;
     width: 100%;
     opacity: 0.4;
+}
+
+
+/**
+Cheeky company page CSS insert...
+ */
+
+.company-data-table {
+    max-width: 45vw;
+}
+
+.company-data-table .card-body {
+    max-height: 75vh;
+    overflow: scroll;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.company-detail-container > .card > .card-body {
+    max-height: 75vh;
+    overflow: scroll;
+}
+
+.company-data-table tr.highlight {
+    background-color: #12939A !important; /* Sorry... */
+}
+
+.company-data-table tr.highlight td {
+    font-weight: bold;
+}
+
+.company-data-table tr:hover {
+    background-color: #79C7E3 !important;
+    cursor: pointer;
+}
+
+.company-data-table tbody {
+    height: 75px;
+}
+
+.company-data-table tbody td {
+    font-size: 12px;
+}
+
+.company-detail-container {
+    max-width: 54vw;
+}
+
+.officer-details .center-child > div {
+    margin: auto;
+}
+
+.officer-metadata {
+    text-transform: capitalize;
 }

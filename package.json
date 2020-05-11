@@ -15,10 +15,13 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
+    "react-spinners": "^0.8.3",
+    "react-vis": "^1.11.7",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
+    "emotion": "^10.0.27",
     "webpack-dev-server": "^3.10.3"
   }
 }

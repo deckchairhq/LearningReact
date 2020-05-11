@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  reg_number: 1
+  address_1: MyString
+  county: MyString
+  country: MyString
+  category: MyString
+  current_status: MyString
+  accounts_category: MyString
+  num_gen_partners: 1
+  num_lim_partners: 1
+  ch_uri: MyString
+  last_return: 1
+  next_return: 1
+
+two:
+  name: MyString
+  reg_number: 1
+  address_1: MyString
+  county: MyString
+  country: MyString
+  category: MyString
+  current_status: MyString
+  accounts_category: MyString
+  num_gen_partners: 1
+  num_lim_partners: 1
+  ch_uri: MyString
+  last_return: 1
+  next_return: 1

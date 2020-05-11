@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2 class="h2">Company Categories</h2>
+</div>
+
+<div id="ReactRoot"></div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+    <tr>
+      <th>Category</th>
+      <th>Company Count</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @categories.each do |cat| %>
+      <tr>
+        <td>
+          <%= link_to cat.sic_1, controller: "categories", action: "show", cat_id: cat.sic_1.split[0] %>
+        </td>
+        <td><%= cat.count %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
